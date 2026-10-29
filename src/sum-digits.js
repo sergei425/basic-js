@@ -13,8 +13,7 @@ const { NotImplementedError } = require('../lib');
  *
  */
 function getSumOfDigits(/* n */) {
-  // Remove line below and write your code here
-  throw new NotImplementedError('Not implemented');
+  return String(n).length === 1 || String(String(n).split('').reduce((acc, el) => acc + +el, 0)).length === 1 ? String(n).split('').reduce((acc, el) => acc + +el, 0) : getSumOfDigits(String(n).split('').reduce((acc, el) => acc + +el, 0))
 }
 
 module.exports = {

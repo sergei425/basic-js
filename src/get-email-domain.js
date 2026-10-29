@@ -11,7 +11,7 @@ const { NotImplementedError } = require('../lib');
  *
  */
 function getEmailDomain(/* email */) {
-  throw new NotImplementedError('Not implemented');
+  return email.slice(email.lastIndexOf('@') + 1)
 }
 
 module.exports = {

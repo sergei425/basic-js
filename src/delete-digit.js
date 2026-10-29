@@ -13,7 +13,7 @@ const { NotImplementedError } = require('../lib');
  */
 function deleteDigit(/* n */) {
   // Remove line below and write your code here
-  throw new NotImplementedError('Not implemented');
+  return Math.max(+n.toString().slice(1), +n.toString().slice(-1));
 }
 
 module.exports = {

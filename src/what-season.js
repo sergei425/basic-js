@@ -12,8 +12,29 @@ const { NotImplementedError } = require('../lib');
  *
  */
 function getSeason(/* date */) {
-  // Remove line below and write your code here
-  throw new NotImplementedError('Not implemented');
+  if (date === undefined) {
+    return "Unable to determine the time of year!";
+  }
+  if (Number.isNaN(Date.parse(date)) ) {
+    throw new Error("Invalid date!");
+  }
+  if (Object.getOwnPropertySymbols(date).length > 0 ) {
+    throw new Error("Invalid date!");
+  }
+
+    let month = new Intl.DateTimeFormat("en", {
+      month: "long",
+    }).format(date);
+    switch (true) {
+      case month === "January" || month === "February" || month === "December":
+        return "winter";
+      case month === "March" || month === "April" || month === "May":
+        return "spring";
+      case month === "June" || month === "July" || month === "August":
+        return "summer";
+      case month === "September" || month === "October" || month === "November":
+        return "autumn";
+    }
 }
 
 module.exports = {
