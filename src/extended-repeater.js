@@ -16,7 +16,7 @@ const { NotImplementedError } = require('../lib');
  *
  */
 
-function repeater(/* str, options */) {
+function repeater(str, options) {
   return Array(options.repeatTimes)
     .fill(str)
     .map(

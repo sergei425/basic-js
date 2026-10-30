@@ -12,7 +12,7 @@ const { NotImplementedError } = require('../lib');
  * For 91, the result should be 1 (9 + 1 = 10, 1 + 0 = 1)
  *
  */
-function getSumOfDigits(/* n */) {
+function getSumOfDigits(n) {
   return String(n).length === 1 || String(String(n).split('').reduce((acc, el) => acc + +el, 0)).length === 1 ? String(n).split('').reduce((acc, el) => acc + +el, 0) : getSumOfDigits(String(n).split('').reduce((acc, el) => acc + +el, 0))
 }
 

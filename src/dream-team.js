@@ -13,7 +13,7 @@ const { NotImplementedError } = require('../lib');
  * createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
  *
  */
-function createDreamTeam(/* members */) {
+function createDreamTeam(members) {
   return Array.isArray(members) && members.filter(el => typeof el === 'string').length ? members.filter(el => typeof el === 'string').map(item => item.trim().toUpperCase()).sort((prev, next) => prev.localeCompare(next)).map(it => it[0]).join('') : false
 }
 module.exports = {

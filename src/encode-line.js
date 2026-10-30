@@ -16,6 +16,6 @@ function encodeLine(/* str */) {
   throw new NotImplementedError('Not implemented');
 }
 
-module.exports = {
-  encodeLine
-};
+// module.exports = {
+//   encodeLine
+// };

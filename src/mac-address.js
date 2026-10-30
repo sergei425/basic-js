@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../lib');
  * For 00-1B-63-84-45-E6, the output should be true.
  *
  */
-function isMAC48Address(/* n */) {
+function isMAC48Address(n) {
   const regexp = /[0-9A-F][0-9A-F]/g;
   const array = [...n.matchAll(regexp)];
   return n.split('-').join('') === array.join('')

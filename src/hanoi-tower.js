@@ -19,6 +19,6 @@ function calculateHanoi(/* disksNumber, turnsSpeed */) {
   throw new NotImplementedError('Not implemented');
 }
 
-module.exports = {
-  calculateHanoi
-};
+// module.exports = {
+//   calculateHanoi
+// };

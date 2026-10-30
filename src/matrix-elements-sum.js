@@ -16,7 +16,7 @@ const { NotImplementedError } = require('../lib');
  *
  * The result should be 9
  */
-function getMatrixElementsSum(/* matrix */) {
+function getMatrixElementsSum(matrix) {
   return matrix.flat().filter((el) => el > 0).reduce((acc, el) => acc + el, 0)
 }
 

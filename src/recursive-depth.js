@@ -13,7 +13,7 @@ const { NotImplementedError } = require('../lib');
  *
  */
 class DepthCalculator {
-  calculateDepth(/* arr */) {
+  calculateDepth(arr) {
    let count = 0
     if (Array.isArray(arr)) {
       count++

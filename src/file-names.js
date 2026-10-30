@@ -20,6 +20,6 @@ function renameFiles(/* names */) {
   throw new NotImplementedError('Not implemented');
 }
 
-module.exports = {
-  renameFiles
-};
+// module.exports = {
+//   renameFiles
+// };

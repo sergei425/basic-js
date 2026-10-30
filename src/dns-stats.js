@@ -27,6 +27,6 @@ function getDNSStats(/* domains */) {
   throw new NotImplementedError('Not implemented');
 }
 
-module.exports = {
-  getDNSStats
-};
+// module.exports = {
+//   getDNSStats
+// };
