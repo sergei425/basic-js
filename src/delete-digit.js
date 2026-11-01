@@ -12,8 +12,11 @@ const { NotImplementedError } = require('../lib');
  *
  */
 function deleteDigit(n) {
-  // Remove line below and write your code here
-  return Math.max(+n.toString().slice(1), +n.toString().slice(-1));
+  const nlist = n.toString().split('').map(Number);
+  const min = Math.min(...nlist);
+  const index = nlist.indexOf(min);
+  nlist.splice(index, 1);
+  return +nlist.join('');
 }
 
 module.exports = {
